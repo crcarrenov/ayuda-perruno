@@ -1,0 +1,24 @@
+body {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border: solid red 1px;
+}
+
+/*header h1 {
+    color: gray;
+}*/
+
+.titulo-principal {
+    color: gray;
+    text-align: center;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+ul {
+    margin-left: 45px;
+}

@@ -36,6 +36,51 @@
           </div>
         </div>
       </nav>
+    <script>
+      console.log("HOLA MUNDO");
+
+      function sumarNumeros(numero1, numero2){
+        var resultado = numero1 + numero2;
+        console.log(numero1 + " + " + numero2 + " = " + resultado);
+      }
+
+      function sumarNumeros2(){
+        let txtNumero1 = document.getElementById("txt-numero1");
+        console.log("txtNumero1: " , txtNumero1.value);
+        let txtNumero2 = document.getElementById("txt-numero2");
+        console.log("txtNumero2: ", txtNumero2.value);
+        let resultado = parseInt(txtNumero1.value) + parseInt(txtNumero2.value);
+        console.log("resultado: ", resultado);
+        txtResultado = document.getElementById("txt-resultado");
+        txtResultado.value = resultado;
+        if(txtNumero1.value === undefined || txtNumero1.value.length == 0){
+            alert("Numero 1 no puede estar vacío");
+        }
+
+        try{
+          parseInt(txtNumero1.value);
+        }catch(Exception ){
+          alert("Numero 1 debe ser de tipo númerico");
+        }
+      }
+    </script>
+    <form action="">
+      <div>
+        <label for="txt-numero1">Numero 1</label>
+        <input type="number" name="numero1" id="txt-numero1">        
+      </div>
+      <div>
+        <label for="txt-numero2">Numero 2</label>
+        <input type="number" name="numero2" id="txt-numero2">
+      </div>
+      <div>
+        <label for="txt-resultado">Resultado</label>
+        <input type="number" name="resultado" id="txt-resultado" disabled>
+      </div>
+      <div>
+        <button type="button" onclick="sumarNumeros2()" >SUMAR</button>
+      </div>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>

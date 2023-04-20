@@ -16,7 +16,7 @@
     },
     { "codigo": 4,
         "titulo": "Leopardo",
-        "imagen": "assets/img/lepardo.jpg",
+        "imagen": "assets/img/leopardo.jpg",
         "descripcion": "por agregar."
     }    
 ]
